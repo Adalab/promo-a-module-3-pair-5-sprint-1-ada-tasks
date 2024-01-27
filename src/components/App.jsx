@@ -1,51 +1,23 @@
-import '../scss/App.scss'
+import '../scss/App.scss';
+import Header from './Header';
+import Form from './Form';
+import Form2 from './Form2';
+import TaskList from './TaskList';
 
 
 function App() {
   return (
     <div>
-      <header className="header">
-        <h1 className="title">AdaTasks</h1>
-    </header>
+      <Header/>
     <main className="main">
         <section className="container add ">
-            <form className="task-form-add">
-                <input type="text" className="task-input js-text-task-add" placeholder="Nueva tarea" />
-                <button className="add-task-btn js-btn-add">Agregar</button>
-            </form>
+          <Form/>
         </section>
 
         <section className="container">
-            <form className="task-form">
-                <input type="text" className="task-input js-text-task-filter" placeholder="Ejemplo: gim" />
-                <button className="add-task-btn js-btn-filter">Buscar</button>
-            </form>
+          <Form2/>
             <ul className="task-list">
-                <li className="tachado">
-                    <input id="1657692730126289" type="checkbox" checked="" />
-                    Recoger setas en el campo
-                </li>
-                <li className="tachado">
-                    <input id="16576927301283248" type="checkbox" checked="" />
-                    Comprar pilas
-                </li>
-                <li className="tachado">
-                    <input id="16576927301315832" type="checkbox" checked="" />
-                    Poner una lavadora de blancos
-                </li>
-                <li>
-                    <input id="16576927301332268" type="checkbox" />
-                    Aprender cómo se realizan las peticiones al servidor
-                    en JavaScript
-                </li>
-                <li>
-                    <input id="16576927301332392" type="checkbox" />
-                    Ir al gimnasio
-                </li>
-                <li>
-                    <input id="16576927301334592" type="checkbox" />
-                    Comprar bragas
-                </li>
+             
             </ul>
         </section>
 
@@ -83,11 +55,6 @@ function App() {
         </section>
 
     </main>
-
-
-
-    <script src="./js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuidv4.min.js"></script>
 
     </div>
   )

@@ -1,5 +1,6 @@
 function TaskList () {
     return (
+        <>
         <li className="tachado">
         <input id="1657692730126289" type="checkbox" checked="" />
         Recoger setas en el campo
@@ -25,6 +26,7 @@ function TaskList () {
         <input id="16576927301334592" type="checkbox" />
         Comprar bragas
     </li>
+    </>
     )
 }
 
